@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ფაილების კატალოგი</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="categories">
+      <div class="cat-1">
+        <img src="images/logo1.png" alt="Logo">
+        <a href="#cat1">პროგრამები</a>
+      </div>
+      <div>
+        <img src="images/logo1.png" alt="Logo">
+        <a href="#cat2">პრინტერები</a>
+      </div>
+      <div>
+        <img src="images/logo1.png" alt="Logo">
+        <a href="#cat3">პროგრამები SPS</a>
+      </div>
+    </div>
+    <input type="text" id="searchInput" placeholder="ძებნა...">
+  </header>
+
+  <main id="results">
+    <!-- კატეგორია 1 -->
+    <section class="category" id="cat1">
+      <h2>კატეგორია 1</h2>
+      <div class="file-list">
+        <div class="file-item" data-title="დოკუმენტი ა" data-description="პირველი დოკუმენტი">
+          <img src="images/logo1.png" alt="Logo">
+          <p class="title">დოკუმენტი ა</p>
+          <p class="description">პირველი დოკუმენტი</p>
+          <a href="files/doc1.pdf" download>გადმოწერა</a>
+        </div>
+
+        <div class="file-item" data-title="დოკუმენტი ბ" data-description="მეორე დოკუმენტი">
+          <img src="images/logo1.png" alt="Logo">
+          <p class="title">დოკუმენტი ბ</p>
+          <p class="description">მეორე დოკუმენტი</p>
+          <a href="files/doc2.pdf" download>გადმოწერა</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- სხვა კატეგორიების სტრუქტურა იგივეა -->
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

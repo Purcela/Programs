@@ -1,0 +1,139 @@
+body { 
+    .header-wraper-gallery {
+        background-image: url(../img/gallery-img.png);
+        height: 580px;
+        .header-color-gallery {
+            height: 580px;
+        }
+        h2 {
+            width: 339px;
+            height: 86px;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+            @media ( max-width: 768px ) {
+                font-size: 65px;
+            }
+            @media ( max-width: 480px ) {
+                width: 260px;
+                font-size: 45px;
+            }
+        }
+    }
+    .gallery-section-1 {
+        @extend %width;
+        height: auto;
+        @include d-flex(flex, space-evenly,center);
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        padding-top: 60px;
+        padding-bottom: 120px;
+        .gallery-box,
+        .gallery-box1 {
+            max-width: 1086px;
+            width: 100%;
+            height: auto;
+            margin-bottom: 30px;
+            @include d-flex(flex, space-between,0);
+            @media (max-width: 1100px ) {
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+            }
+            .gallery-minibox1,
+            .gallery-minibox2,
+            .gallery-minibox3,
+            .gallery-minibox4 {
+                max-width: 528px;
+                height: 1042px;
+                @include d-flex(flex, space-between, 0 );
+                -ms-flex-line-pack: justify;
+                    align-content: space-between;
+                -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                @media ( max-width:560px) {
+                    height: 1300px;
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                        -ms-flex-direction: column;
+                            flex-direction: column;
+                    -webkit-box-align: center;
+                        -ms-flex-align: center;
+                            align-items: center;
+                    -ms-flex-wrap: nowrap;
+                        flex-wrap: nowrap;
+                }
+                .gallery-img1 {
+                    max-width: 249px;
+                    width: 100%;
+                    height: auto;
+                }            
+                .gallery-img2 {
+                    max-width: 528px;
+                    width: 100%;
+                    height: auto;
+                    @media ( max-width: 560px ) {
+                        max-width: 249px;
+                    }
+                }
+                .gallery-img3 {
+                    @media ( max-width: 560px) {
+                        max-width: 249px;
+                        width: 100%;
+                        height: auto;
+                    }                    
+                }
+            }
+            .gallery-minibox2,
+            .gallery-minibox4 {
+                @media ( max-width:1100px ) {
+                    margin-top: 30px;
+                }
+                @media ( max-width:560px ) {
+                    height: 920px;
+                }
+            }
+        }
+        .gallery-box1 {
+            display: none;                  
+        }
+        .gallery-box1.open-menu {
+            max-width: 1086px;
+            width: 100%;
+            height: auto;
+            margin-bottom: 30px;
+            @include d-flex(flex, space-between,0);
+        }
+        .gallery-load {
+                width: 342px;
+                height: 60px;
+                margin-top: 30px;
+                @include d-flex( flex, center, center);
+                @include border(2px, solid, #51453A);
+                cursor:pointer;
+                @media ( max-width: 560px ) {
+                    width: 260px;
+                }
+                p {
+                    width: 83px;
+                    height: 20px;
+                    font-family: $m-reg;
+                    font-size: 16px;
+                    color: #51453A;
+                }
+        }
+    }
+
+
+
+
+
+
+}
