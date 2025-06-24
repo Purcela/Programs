@@ -1,5 +1,27 @@
 {
+  "name": "programs",
+  "version": "1.0.0",
+  "description": "download and instal",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "gulp": "^5.0.1",
+    "gulp-sass": "^6.0.1",
+    "sass": "^1.89.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Purcela/Programs.git"
+  },
+  "author": "G.P",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Purcela/Programs/issues"
+  },
+  "homepage": "https://github.com/Purcela/Programs#readme",
   "dependencies": {
-    "gulp": "^5.0.1"
+    "gulp-rename": "^2.0.0"
   }
 }

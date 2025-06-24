@@ -1,7 +1,39 @@
-body {
-    @extend %body;
-
-
-
-
+.index-body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5px;
+    .index-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 95%;
+        height: 25%;
+        padding: 5px;
+        background-color: lightgray;
+        .header-box {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            height: 95%;
+            .cat-1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 140px;
+                height: 95%;
+                .cat-img {
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+        }
+        .search {
+            width: 20%;
+        }
+    }
 }

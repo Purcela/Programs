@@ -1,20 +1,14 @@
-// npm install sass gulp-sass --save-dev
+const gulp = require('gulp');
+const sass = require('gulp-sass')(require('sass'));
 
-var gulp = require('gulp');
-var sass = require('gulp-sass')(require('sass'));
-
-gulp.task('sass', function(cb) {
-  gulp
-    .src('scss/styles.scss')
+gulp.task('sass', function () {
+  return gulp.src('scss/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe( gulp.dest('css') );
-  cb();
+    .pipe(gulp.dest('css'));
 });
 
-gulp.task(
-  'watch',
-  gulp.series('sass', function(cb) {
-    gulp.watch('scss/**/*.scss', gulp.series('sass'));
-    cb();
-  })
-);
+gulp.task('watch', function () {
+  gulp.watch('scss/**/*.scss', gulp.series('sass'));
+});
+
+gulp.task('default', gulp.series('sass', 'watch'));
