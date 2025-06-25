@@ -34,6 +34,53 @@
         }
         .search {
             width: 20%;
+            height: 25px;
         }
+    }
+    .main-box {
+        width: 95%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .form-container {
+            background: white;
+            padding: 2rem;
+            border: 2px solid black;
+            width: 35%;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            input, textarea {
+                margin-bottom: 1rem;
+                padding: 0.8rem;
+                border: 2px solid black;
+                font-size: 1rem;
+            }
+            .text {
+                height: 150px;
+            }
+            button {
+                padding: 0.8rem;
+                border: 2px solid black;
+                background: white;
+                cursor: pointer;
+
+                &:hover {
+                background: black;
+                color: white;
+                }
+            }
+        }
+    }
+    .programs-box {
+        width: 95%;
+        height: 74%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
     }
 }

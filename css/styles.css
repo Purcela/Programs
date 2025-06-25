@@ -52,4 +52,50 @@
 }
 .index-body .index-header .search {
   width: 20%;
+  height: 25px;
+}
+.index-body .main-box {
+  width: 95%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.index-body .main-box .form-container {
+  background: white;
+  padding: 2rem;
+  border: 2px solid black;
+  width: 35%;
+}
+.index-body .main-box form {
+  display: flex;
+  flex-direction: column;
+}
+.index-body .main-box form input, .index-body .main-box form textarea {
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  border: 2px solid black;
+  font-size: 1rem;
+}
+.index-body .main-box form .text {
+  height: 150px;
+}
+.index-body .main-box form button {
+  padding: 0.8rem;
+  border: 2px solid black;
+  background: white;
+  cursor: pointer;
+}
+.index-body .main-box form button:hover {
+  background: black;
+  color: white;
+}
+.index-body .programs-box {
+  width: 95%;
+  height: 74%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }

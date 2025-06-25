@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="ka">
 <head>
         <meta charset="UTF-8">
@@ -34,15 +34,39 @@
           <h3>ფაილები</h3>
         </div>
       </a>
-      <a href="sps-programs.html">
+      <a href="instruction.html">
         <div class="cat-1 cat-3">
           <img class="cat-img" src="images/video.jpg" alt="img">
-          <h3 href="sps-programs.html"> ინსტრუქციები </h3>
+          <h3> ინსტრუქციები </h3>
         </div>
       </a>
     </div>
     <input class="search" type="text" id="searchInput" placeholder="   ძებნა...">
   </header>
+
+  <main id="results">
+    <!-- კატეგორია 1 -->
+    <section class="category" id="cat1">
+      <h2>კატეგორია 1</h2>
+      <div class="file-list">
+        <div class="file-item" data-title="დოკუმენტი ა" data-description="პირველი დოკუმენტი">
+          <img src="images/logo1.png" alt="Logo">
+          <p class="title">დოკუმენტი ა</p>
+          <p class="description">პირველი დოკუმენტი</p>
+          <a href="files/doc1.pdf" download>გადმოწერა</a>
+        </div>
+
+        <div class="file-item" data-title="დოკუმენტი ბ" data-description="მეორე დოკუმენტი">
+          <img src="images/logo1.png" alt="Logo">
+          <p class="title">დოკუმენტი ბ</p>
+          <p class="description">მეორე დოკუმენტი</p>
+          <a href="files/doc2.pdf" download>გადმოწერა</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- სხვა კატეგორიების სტრუქტურა იგივეა -->
+  </main>
 
   <script src="script.js"></script>
 </body>

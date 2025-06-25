@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ka">
+<html lang="en">
 <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,58 +16,56 @@
 <body class="index-body">
   <header class="index-header">
     <div class="header-box">
+      <a href="index.html">
+        <div class="cat-1">
+          <img class="cat-img" src="images/home.png" alt="img">
+          <h3> მთავარი </h3>
+        </div>
+      </a>
       <a href="programs.html">
         <div class="cat-1">
           <img class="cat-img" src="images/programs.jpg" alt="img">
-          <h3>პროგრამები</h3>
+          <h3> პროგრამები </h3>
         </div>
       </a>
       <a href="printers.html">
         <div class="cat-1 cat-2">
           <img class="cat-img" src="images/printers.jpg" alt="img">
-          <h3>პრინტერები</h3>
+          <h3> პრინტერები </h3>
         </div>
       </a>
-      <a href="programs.html">
+      <a href="iso.html">
         <div class="cat-1">
           <img class="cat-img" src="images/iso.png" alt="img">
-          <h3>ფაილები</h3>
+          <h3> ფაილები </h3>
         </div>
       </a>
       <a href="instruction.html">
         <div class="cat-1 cat-3">
           <img class="cat-img" src="images/video.jpg" alt="img">
-          <h3> ინსტრუქციები </h3>
+          <h3> ინსტრუქცია </h3>
         </div>
       </a>
     </div>
     <input class="search" type="text" id="searchInput" placeholder="   ძებნა...">
   </header>
 
-  <main id="results">
-    <!-- კატეგორია 1 -->
-    <section class="category" id="cat1">
-      <h2>კატეგორია 1</h2>
-      <div class="file-list">
-        <div class="file-item" data-title="დოკუმენტი ა" data-description="პირველი დოკუმენტი">
-          <img src="images/logo1.png" alt="Logo">
-          <p class="title">დოკუმენტი ა</p>
-          <p class="description">პირველი დოკუმენტი</p>
-          <a href="files/doc1.pdf" download>გადმოწერა</a>
-        </div>
+  <main class="main-box" id="results">
+    <h2> თუ ვერ იპოვე სასურველი პროგრამა მოგვწერეთ </h2>
+    <div class="form-container">
+      <form class="form" id="contactForm">
+        <input type="text" name="firstName" placeholder="სახელი" required>
+        <input type="text" name="lastName" placeholder="გვარი" required>
+        <input type="email" name="email" placeholder="მეილი" required>
+        <textarea class="text" name="message" placeholder="ჩაწერე ტექსტი" required></textarea>
+        <button type="submit">გაგზავნა</button>
+      </form>
+    </div>
 
-        <div class="file-item" data-title="დოკუმენტი ბ" data-description="მეორე დოკუმენტი">
-          <img src="images/logo1.png" alt="Logo">
-          <p class="title">დოკუმენტი ბ</p>
-          <p class="description">მეორე დოკუმენტი</p>
-          <a href="files/doc2.pdf" download>გადმოწერა</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- სხვა კატეგორიების სტრუქტურა იგივეა -->
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   </main>
 
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
