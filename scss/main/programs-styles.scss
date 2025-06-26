@@ -1,0 +1,43 @@
+.body {
+    .programs-box {
+        width: 95%;
+        height: 74%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        .file-box {
+            width: 80%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            border: 1px solid black;
+            .file-box1,
+            .file-box2,
+            .file-box3 {
+                width: 10%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+             border: 1px solid black;
+                .file-img {
+                     width: 40px;
+                     height: 40px; 
+                }
+            }
+            .file-box2 {
+            width: 40%;
+            height: 100%;
+            }
+            .file-box3 {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                width: 50%;
+                height: 100%;
+            }
+        }
+    }
+}
