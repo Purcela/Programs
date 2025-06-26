@@ -20,6 +20,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   padding: 0 5px;
 }
 .index-body .index-header {
@@ -29,7 +30,7 @@
   align-items: center;
   width: 95%;
   height: 25%;
-  padding: 5px;
+  padding-top: 5px;
   background-color: lightgray;
 }
 .index-body .index-header .header-box {
@@ -88,7 +89,7 @@
   cursor: pointer;
 }
 .index-body .main-box form button:hover {
-  background: black;
+  background: green;
   color: white;
 }
 .index-body .programs-box {
@@ -98,4 +99,36 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+}
+.index-body .programs-box .file-box {
+  width: 80%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  border: 1px solid black;
+}
+.index-body .programs-box .file-box .file-box1,
+.index-body .programs-box .file-box .file-box2,
+.index-body .programs-box .file-box .file-box3 {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+.index-body .programs-box .file-box .file-box1 .file-img,
+.index-body .programs-box .file-box .file-box2 .file-img,
+.index-body .programs-box .file-box .file-box3 .file-img {
+  width: 40px;
+  height: 40px;
+}
+.index-body .programs-box .file-box .file-box2 {
+  width: 40%;
+  height: 100%;
+}
+.index-body .programs-box .file-box .file-box3 {
+  width: 50%;
+  height: 100%;
 }

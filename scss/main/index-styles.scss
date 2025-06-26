@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     padding: 0 5px;
     .index-header {
         display: flex;
@@ -12,7 +13,7 @@
         align-items: center;
         width: 95%;
         height: 25%;
-        padding: 5px;
+        padding-top: 5px;
         background-color: lightgray;
         .header-box {
             display: flex;
@@ -69,7 +70,7 @@
                 cursor: pointer;
 
                 &:hover {
-                background: black;
+                background: green;
                 color: white;
                 }
             }
@@ -82,5 +83,35 @@
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
+        .file-box {
+            width: 80%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            border: 1px solid black;
+            .file-box1,
+            .file-box2,
+            .file-box3 {
+                width: 10%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+             border: 1px solid black;
+                .file-img {
+                     width: 40px;
+                     height: 40px; 
+                }
+            }
+            .file-box2 {
+            width: 40%;
+            height: 100%;
+            }
+            .file-box3 {
+                width: 50%;
+                height: 100%;
+            }
+        }
     }
 }
