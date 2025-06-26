@@ -11,7 +11,7 @@
             height: 50px;
             display: flex;
             align-items: center;
-            margin-top: 10px;
+            margin-top: 5px;
             border: 1px solid black;
             .file-box1,
             .file-box2,
@@ -37,6 +37,14 @@
                 justify-content: space-evenly;
                 width: 50%;
                 height: 100%;
+                a {
+                    button {
+                        &:hover {
+                        background: green;
+                        color: white;
+                        }
+                    }
+                }
             }
         }
     }
