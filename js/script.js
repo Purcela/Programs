@@ -14,3 +14,22 @@ document.getElementById("contactForm").addEventListener("submit", function(event
       alert("შეცდომა გაგზავნისას", error);
     });
 });
+
+// printers function
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll('.printer-box a').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      const targetClass = this.getAttribute('data-target');
+
+      document.querySelectorAll('.printer-list > div').forEach(function (box) {
+        box.classList.remove('active');
+      });
+
+      const targetBox = document.querySelector(`.${targetClass}`);
+      if (targetBox) {
+        targetBox.classList.add('active');
+      }
+    });
+  });
+});

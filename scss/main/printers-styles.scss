@@ -1,0 +1,82 @@
+.body {
+    .printer-box{
+        width: 95%;
+        height: 14%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: lightsteelblue;
+        .print-img {
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50px;
+                }
+    }
+    .printer-list{
+        height: 58%;
+
+        .hp-box,
+        .canon-box,
+        .kyosera-box,
+        .samsung-box,
+        .epson-box,
+        .xerox-box,
+        .other-printers-box {
+            width: 100%;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            .driver-box {
+                width: 80%;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                margin-top: 5px;
+                border: 1px solid black;
+                .driver-box1,
+                .driver-box2,
+                .driver-box3 {
+                    width: 10%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                border: 1px solid black;
+                    .file-img {
+                        width: 40px;
+                        height: 40px; 
+                    }
+                }
+                .driver-box2 {
+                width: 40%;
+                height: 100%;
+                }
+                .driver-box3 {
+                    width: 50%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    a {
+                        button {
+                            &:hover {
+                            background: green;
+                            color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .hp-box.active,
+        .canon-box.active,
+        .kyosera-box.active,
+        .samsung-box.active,
+        .epson-box.active,
+        .xerox-box.active,
+        .other-printers-box.active {
+            display: flex;
+        }
+    }
+}

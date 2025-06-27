@@ -49,9 +49,31 @@
     </div>
     <input class="search" type="text" id="searchInput" placeholder="   ძებნა...">
   </header>
-
-  <main class="programs-box" id="results">
-    <div class="file-box" data-title="დოკუმენტი ბ" data-description="მეორე დოკუმენტი">
+  <div class="printer-box">
+    <a href="#" data-target="hp-box">
+      <img class="print-img" src="all-programs/printers/images/hp.jpg" alt="img">
+    </a>
+    <a href="#" data-target="canon-box">
+      <img class="print-img" src="all-programs/printers/images/canon.jpg" alt="img">
+    </a>
+    <a href="#" data-target="kiosera-box">
+      <img class="print-img" src="all-programs/printers/images/kiosera.jpg" alt="img">
+    </a>
+    <a href="#" data-target="samsung-box">
+      <img class="print-img" src="all-programs/printers/images/samsung.jpeg" alt="img">
+    </a>
+    <a href="#" data-target="epson-box">
+      <img class="print-img" src="all-programs/printers/images/epson.png" alt="img">
+    </a>
+    <a href="#" data-target="xerox-box">
+      <img class="print-img" src="all-programs/printers/images/xerox.png" alt="img">
+    </a>
+    <a href="#" data-target="others-box">
+      <img class="print-img" src="all-programs/printers/images/others.png" alt="img">
+    </a>
+  </div>
+  <main class="programs-box printer-list" id="results">    
+    <div class="file-box">
       <div class="file-box1">
         <p class="title"> ლოგო </p>
       </div>
@@ -63,31 +85,71 @@
       </div>
     </div>
 
-    <div class="file-box" data-title="დოკუმენტი ბ" data-description="მეორე დოკუმენტი">
-      <div class="file-box1">
-        <img class="file-img" src="images/chrome.png" alt="logo">
+    <!-- HP Printers -->
+    <div class="hp-box">
+      <div class="driver-box">
+        <div class="driver-box1">
+          <img class="file-img" src="all-programs/printers/images/hp.jpg" alt="logo">
+        </div>
+        <div class="driver-box2">
+          <p class="title"> Laserjet M428-M429 </p>
+        </div>
+        <div class="driver-box3">
+          <a href="all-programs/printers/hp-printers/LJM428-M429_Full_WebPack_48.4.4588.exe">
+            <button> 64 bit </button>
+          </a>
+        </div>
       </div>
-      <div class="file-box2">
-        <p class="title"> Google Chrome </p>
-      </div>
-      <div class="file-box3">
-        <p class="title"> ფაილის ვერსია </p>
+      <div class="driver-box">
+        <div class="driver-box1">
+          <img class="file-img" src="all-programs/printers/images/hp.jpg" alt="logo">
+        </div>
+        <div class="driver-box2">
+          <p class="title"> Laserjet M129-M134 </p>
+        </div>
+        <div class="driver-box3">
+          <a href="all-programs/printers/hp-printers/LJM129-M134_UWWL_4-1_UW_4_1_Full_WebPack_44.3.2667.exe">
+            <button> 64 bit </button>
+          </a>
+        </div>
       </div>
     </div>
 
-    <div class="file-box" data-title="დოკუმენტი ბ" data-description="მეორე დოკუმენტი">
-      <div class="file-box1">
-        <img class="file-img" src="images/Firefox.png" alt="logo">
+    <!-- Canon Printers -->
+     <div class="canon-box">
+      <div class="driver-box">
+        <div class="driver-box1">
+          <img class="file-img" src="all-programs/printers/images/hp.jpg" alt="logo">
+        </div>
+        <div class="driver-box2">
+          <p class="title"> MF4450_4430_4410 </p>
+        </div>
+        <div class="driver-box3">
+          <a href="all-programs/printers/canon-printers/MF4450_4430_4410_MFDrivers_W64_uk_EN.exe">
+            <button> 64 bit </button>
+          </a>
+          <a href="all-programs/printers/canon-printers/MF4450_4430_4410_MFDrivers_W32_uk_EN.exe">
+            <button> 32 bit </button>
+          </a>
+        </div>
       </div>
-      <div class="file-box2">
-        <p class="title"> Mozila Firefox </p>
-      </div>
-      <div class="file-box3">
-        <p class="title"> ფაილის ვერსია </p>
+      <div class="driver-box">
+        <div class="driver-box1">
+          <img class="file-img" src="all-programs/printers/images/hp.jpg" alt="logo">
+        </div>
+        <div class="driver-box2">
+          <p class="title"> Laserjet M129-M134 </p>
+        </div>
+        <div class="driver-box3">
+          <a href="all-programs/printers/hp-printers/LJM129-M134_UWWL_4-1_UW_4_1_Full_WebPack_44.3.2667.exe">
+            <button> 64 bit </button>
+          </a>
+        </div>
       </div>
     </div>
+
   </main>
 
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
