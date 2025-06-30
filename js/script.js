@@ -1,35 +1,56 @@
-// EmailJS initialization
-(function(){
-  emailjs.init("YOUR_USER_ID"); // შეცვალე შენი EmailJS user ID-ით
-})();
 
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-  event.preventDefault();
+// პრინტერები
 
-  emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this)
-    .then(() => {
-      alert("წარმატებით გაიგზავნა!");
-      this.reset();
-    }, (error) => {
-      alert("შეცდომა გაგზავნისას", error);
-    });
-});
+console.log("სკრიპტი იწყებს მუშაობას.");
 
-// printers function
+// `defer` ატრიბუტის გამო, DOMContentLoaded აღარ არის კრიტიკულად აუცილებელი, 
+// მაგრამ მისი დატოვება კოდს არ აფუჭებს.
 document.addEventListener("DOMContentLoaded", function () {
-  document.querySelectorAll('.printer-box a').forEach(function (link) {
-    link.addEventListener('click', function (e) {
-      e.preventDefault();
-      const targetClass = this.getAttribute('data-target');
+    console.log("DOM სრულად ჩაიტვირთა. ვამაგრებთ ივენთებს.");
 
-      document.querySelectorAll('.printer-list > div').forEach(function (box) {
-        box.classList.remove('active');
-      });
+    const printerLinks = document.querySelectorAll('.printer-box a');
+    const printerSections = document.querySelectorAll('.printer-list > div[class$="-box"]');
 
-      const targetBox = document.querySelector(`.${targetClass}`);
-      if (targetBox) {
-        targetBox.classList.add('active');
-      }
+    // თუ ლინკები ან სექციები ვერ მოიძებნა, ვაჩვენოთ შეცდომა კონსოლში
+    if (printerLinks.length === 0) {
+        console.error("პრინტერის ლინკები (.printer-box a) ვერ მოიძებნა!");
+        return; // შევწყვიტოთ მუშაობა
+    }
+    if (printerSections.length === 0) {
+        console.error("პრინტერის სექციები (div[class$='-box']) ვერ მოიძებნა!");
+        return; // შევწყვიტოთ მუშაობა
+    }
+
+    function showPrinterSection(targetClass) {
+        let found = false;
+        printerSections.forEach(function (box) {
+            if (box.classList.contains(targetClass)) {
+                box.classList.add('active');
+                found = true;
+            } else {
+                box.classList.remove('active');
+            }
+        });
+        if (!found) {
+            console.warn(`სექცია კლასით '${targetClass}' ვერ მოიძებნა.`);
+        }
+    }
+
+    // თავდაპირველად გამოვაჩინოთ HP (ან პირველი ხელმისაწვდომი)
+    const firstTarget = printerLinks[0].getAttribute('data-target');
+    if (firstTarget) {
+        console.log(`თავდაპირველად ვააქტიურებთ: ${firstTarget}`);
+        showPrinterSection(firstTarget);
+    }
+    
+    printerLinks.forEach(function (link) {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetClass = this.getAttribute('data-target');
+            if (targetClass) {
+                console.log(`დაკლიკება: ${targetClass}`);
+                showPrinterSection(targetClass);
+            }
+        });
     });
-  });
 });

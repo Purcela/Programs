@@ -116,12 +116,21 @@
 .body .printer-list .samsung-box,
 .body .printer-list .epson-box,
 .body .printer-list .xerox-box,
-.body .printer-list .other-printers-box {
+.body .printer-list .others-box {
   width: 100%;
   display: none;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+}
+.body .printer-list .hp-box.active,
+.body .printer-list .canon-box.active,
+.body .printer-list .kyosera-box.active,
+.body .printer-list .samsung-box.active,
+.body .printer-list .epson-box.active,
+.body .printer-list .xerox-box.active,
+.body .printer-list .others-box.active {
+  display: flex;
 }
 .body .printer-list .hp-box .driver-box,
 .body .printer-list .canon-box .driver-box,
@@ -129,7 +138,7 @@
 .body .printer-list .samsung-box .driver-box,
 .body .printer-list .epson-box .driver-box,
 .body .printer-list .xerox-box .driver-box,
-.body .printer-list .other-printers-box .driver-box {
+.body .printer-list .others-box .driver-box {
   width: 80%;
   height: 50px;
   display: flex;
@@ -155,9 +164,9 @@
 .body .printer-list .xerox-box .driver-box .driver-box1,
 .body .printer-list .xerox-box .driver-box .driver-box2,
 .body .printer-list .xerox-box .driver-box .driver-box3,
-.body .printer-list .other-printers-box .driver-box .driver-box1,
-.body .printer-list .other-printers-box .driver-box .driver-box2,
-.body .printer-list .other-printers-box .driver-box .driver-box3 {
+.body .printer-list .others-box .driver-box .driver-box1,
+.body .printer-list .others-box .driver-box .driver-box2,
+.body .printer-list .others-box .driver-box .driver-box3 {
   width: 10%;
   height: 100%;
   display: flex;
@@ -183,11 +192,12 @@
 .body .printer-list .xerox-box .driver-box .driver-box1 .file-img,
 .body .printer-list .xerox-box .driver-box .driver-box2 .file-img,
 .body .printer-list .xerox-box .driver-box .driver-box3 .file-img,
-.body .printer-list .other-printers-box .driver-box .driver-box1 .file-img,
-.body .printer-list .other-printers-box .driver-box .driver-box2 .file-img,
-.body .printer-list .other-printers-box .driver-box .driver-box3 .file-img {
+.body .printer-list .others-box .driver-box .driver-box1 .file-img,
+.body .printer-list .others-box .driver-box .driver-box2 .file-img,
+.body .printer-list .others-box .driver-box .driver-box3 .file-img {
   width: 40px;
   height: 40px;
+  border-radius: 50%;
 }
 .body .printer-list .hp-box .driver-box .driver-box2,
 .body .printer-list .canon-box .driver-box .driver-box2,
@@ -195,7 +205,7 @@
 .body .printer-list .samsung-box .driver-box .driver-box2,
 .body .printer-list .epson-box .driver-box .driver-box2,
 .body .printer-list .xerox-box .driver-box .driver-box2,
-.body .printer-list .other-printers-box .driver-box .driver-box2 {
+.body .printer-list .others-box .driver-box .driver-box2 {
   width: 40%;
   height: 100%;
 }
@@ -205,7 +215,7 @@
 .body .printer-list .samsung-box .driver-box .driver-box3,
 .body .printer-list .epson-box .driver-box .driver-box3,
 .body .printer-list .xerox-box .driver-box .driver-box3,
-.body .printer-list .other-printers-box .driver-box .driver-box3 {
+.body .printer-list .others-box .driver-box .driver-box3 {
   width: 50%;
   height: 100%;
   display: flex;
@@ -218,18 +228,9 @@
 .body .printer-list .samsung-box .driver-box .driver-box3 a button:hover,
 .body .printer-list .epson-box .driver-box .driver-box3 a button:hover,
 .body .printer-list .xerox-box .driver-box .driver-box3 a button:hover,
-.body .printer-list .other-printers-box .driver-box .driver-box3 a button:hover {
+.body .printer-list .others-box .driver-box .driver-box3 a button:hover {
   background: green;
   color: white;
-}
-.body .printer-list .hp-box.active,
-.body .printer-list .canon-box.active,
-.body .printer-list .kyosera-box.active,
-.body .printer-list .samsung-box.active,
-.body .printer-list .epson-box.active,
-.body .printer-list .xerox-box.active,
-.body .printer-list .other-printers-box.active {
-  display: flex;
 }
 
 .body .programs-box {
