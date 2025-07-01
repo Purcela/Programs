@@ -68,7 +68,8 @@ document.addEventListener('DOMContentLoaded', () => {
         'programs.html',
         'printers.html',
         'iso.html',
-        'sps-files.html'
+        'sps-files.html',
+        'instruction.html'
     ];
 
     let searchIndex = [];
