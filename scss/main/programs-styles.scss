@@ -1,4 +1,12 @@
 .body {
+    .index-header {
+        a{
+            width: 20%;
+            height: 25px;
+            margin-bottom: 10px;
+           
+        }
+    }
     .programs-box {
         width: 95%;
         height: 74%;
@@ -30,6 +38,19 @@
             .file-box2 {
             width: 40%;
             height: 100%;
+                .sort-p {
+                    width: 92%;
+                    text-align: center;
+                }
+                button {
+                    width: 8%;
+                    cursor: pointer;
+                    font-family: inherit;
+                    &:hover {
+                        background-color: green;
+                        color: white;
+                    }
+                }
             }
             .file-box3 {
                 display: flex;

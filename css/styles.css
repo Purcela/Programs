@@ -51,6 +51,14 @@
   width: 80px;
   height: 80px;
 }
+.body .index-header .header-box .cat-1 h3 {
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+.body .index-header .header-box .cat-1 h3.active {
+  background-color: green;
+}
 .body .index-header .search {
   width: 20%;
   height: 25px;
@@ -233,6 +241,11 @@
   color: white;
 }
 
+.body .index-header a {
+  width: 20%;
+  height: 25px;
+  margin-bottom: 10px;
+}
 .body .programs-box {
   width: 95%;
   height: 74%;
@@ -268,6 +281,19 @@
 .body .programs-box .file-box .file-box2 {
   width: 40%;
   height: 100%;
+}
+.body .programs-box .file-box .file-box2 .sort-p {
+  width: 92%;
+  text-align: center;
+}
+.body .programs-box .file-box .file-box2 button {
+  width: 8%;
+  cursor: pointer;
+  font-family: inherit;
+}
+.body .programs-box .file-box .file-box2 button:hover {
+  background-color: green;
+  color: white;
 }
 .body .programs-box .file-box .file-box3 {
   display: flex;
