@@ -1,10 +1,13 @@
 .body {
     .index-header {
-        a{
+        a {
             width: 20%;
             height: 25px;
             margin-bottom: 10px;
-           
+            button {
+                width: 100%;
+                height: 100%;
+            }           
         }
     }
     .programs-box {
@@ -67,6 +70,9 @@
                     }
                 }
             }
+        }
+        .sort-bar {
+            margin-top: 30px;
         }
     }
 }

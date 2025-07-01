@@ -1,7 +1,7 @@
 .body {
     .printer-box{
-        width: 95%;
-        height: 14%;
+        width: 99%;
+        height: 15%;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
@@ -13,8 +13,7 @@
                 }
     }
     .printer-list{
-        height: 58%;
-
+        height: 60%;
         .hp-box,
         .canon-box,
         .kyosera-box,
