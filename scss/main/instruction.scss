@@ -1,0 +1,33 @@
+ body {
+    .instruction {
+        width: 99%;
+        height: 74%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        .instruction-box {
+            width: 40%;
+            height: 200px;
+            margin: 20px;
+            display: flex;
+            border-radius: 20px;
+            border-style: double;
+            .instruction-file {
+                width: 40%;
+                height: 200px;
+                border-radius: 20px;
+                background-color: green;
+            }
+            .instruction-title {
+                width: 60%;
+                height: 100%;
+                border-radius: 20px;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+        }
+    }
+ }
